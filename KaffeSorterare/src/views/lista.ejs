@@ -1,0 +1,43 @@
+<script type='text/javascript'>
+    
+    var rows = <%- JSON.stringify(obj)%> ;
+    let r = rows[0];
+    var rr = JSON.stringify(r);
+
+alert((rr))
+
+
+
+//  var myHeaders = new Headers();
+//  myHeaders.append('dataType','jsonp');
+
+ //alert(JSON.parse(rows[0]))
+//  var requestOptions = {
+//    method: 'GET',
+//    mode:"no-cors",
+//    headers: myHeaders,
+//    redirect: 'follow'
+//  };
+ 
+//  fetch("https://www.vattenfall.se/api/price/spot/pricearea/2023-10-16/2023-10-16/SN3/", requestOptions)
+//    .then(response => response.text())
+//    .then(result => console.log(result))
+//    .catch(error => console.log('error', error));
+    </script>
+<table>
+
+    <% obj.map((i)=>{
+        %>
+        <tr>
+        <td>
+<%=i.TimeStampHour%>
+        </td>
+        <td>
+            <%=i.Value%>
+                    </td></tr>
+                    <%
+    }) %>
+   
+
+</table>
+

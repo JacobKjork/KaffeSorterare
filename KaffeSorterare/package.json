@@ -1,0 +1,23 @@
+{
+  "name": "kaffesorterare",
+  "version": "1.0.0",
+  "description": "Sorterar kaffe",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=app & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Kjörk",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "debug": "^4.3.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  },
+  "nodemonConfig": {
+    "delay": 2500
+  }
+}
