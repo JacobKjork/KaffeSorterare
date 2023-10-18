@@ -82,9 +82,9 @@ app.set('view engine', 'ejs');
          people = result.people.person;
     
         // Gör något med personerna här...
-
+        console.log(people);
 // Lägg till en ny person
-const newPerson = { firstname: req.body.firstName, lastname: req.body.lastName, email: req.body.email, birthday: req.body.birthday };
+const newPerson = { firstname: req.body.firstName, lastname: req.body.lastName, often: req.body.often, Age: req.body.Age };
 people.push(newPerson);
 
 // Skapa XML-strängen från personobjekten
@@ -93,8 +93,8 @@ ${people.map(person => `
   <person>
     <firstname>${person.firstname}</firstname>
     <lastname>${person.lastname}</lastname>
-    <email>${person.email}</email>
-    <birthday>${person.birthday}</birthday>
+    <often>${person.often}</often>
+    <Age>${person.Age}</Age>
   </person>`).join('\n')}
 </people>`;
 
@@ -108,7 +108,7 @@ fs.writeFile(filePath, xmlString, (err) => {
    }
  });
 
- res.redirect( '/test.html');
+ res.redirect( '/elsa.html');
       });
     });
 

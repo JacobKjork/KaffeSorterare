@@ -29,7 +29,33 @@ figcaption{color:#23c8fa ;
     margin: 20px;
     
     }
-img{
-    width: 80%;
-    box-shadow: 10px 10px 5px #23c8fa;
-}
+    img{
+        width: 80%;
+        box-shadow: 10px 10px 5px #23c8fa;
+    }
+    
+    img.container{
+        width: 100%;
+        box-shadow: 1px #23c8fa;
+    }
+    
+    div.polaroid {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  form {
+    color:floralwhite;
+    margin: 10px;
+  }
+  fieldset{
+    border-radius: 20px;
+    padding: 30px;
+  }
